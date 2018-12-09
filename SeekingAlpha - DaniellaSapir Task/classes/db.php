@@ -36,7 +36,7 @@ class DB {
         }
         
         $rs =  mysqli_query(self::connectToDB()->conn, $sql);
-        //var_dump(mysqli_error(self::connectToDB()->conn));
+        //  var_dump(mysqli_error(self::connectToDB()->conn));
 
         return $rs;
     }

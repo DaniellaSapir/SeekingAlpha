@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +31,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.php" class="logout">Log Out</a></li>
                 </ul>
             </div><!--.nav-collapse -->
         </div>

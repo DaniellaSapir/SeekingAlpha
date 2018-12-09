@@ -40,21 +40,13 @@ $(document).ready(function()    {
                         //HOVER EFFECT
                         $( ".following" ).hover(
                             function() {
-                            //   $( this ).append( $( "<span> ***</span>" ) );
                               $( this )
                               .css("color", "red" )
                               .text("Unfollow");
                             }, function() {
-                              $( this ).css("color", "white" ).text("Follow");                              ;
+                              $( this ).css("color", "white" ).text("Following");                              ;
                             }
                         );
-                        // $( ".following" ).hover(
-                        //     function() {
-                        //       $( this ).addClass( "hover" );
-                        //     }, function() {
-                        //       $( this ).removeClass( "hover" );
-                        //     }
-                        //   );
                     }
         );
     }  
@@ -87,17 +79,28 @@ $(document).ready(function()    {
                     $(event.target)
                     .addClass('following')
                     .removeClass('follow')
-                    .text('Following');
+                    .text('Following')
+                    .hover(
+                        function() {
+                          $( this )
+                          .css("color", "red" )
+                          .text("Unfollow");
+                        }, function() {
+                          $( this ).css("color", "white" ).text("Following");                              ;
+                        }
+                    );
                 } else {                    
                     //UNFOLLOW
                     $(event.target)
                     .addClass('follow')
                     .removeClass('following')
-                    .text('Follow');
+                    .text('Follow')
+                    .unbind('mouseenter mouseleave');
                 }   
             }
         );
     }  
+
 
 });  //end ready func
    

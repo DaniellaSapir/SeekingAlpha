@@ -18,13 +18,19 @@ if(isset($_POST['uname'])) {
 } 
 ?>
 
+<div class="container">
+    <div class="jumbotron">
+      <h2 class="display-3">User Login - Please enter your name</h2>
+      <p class="lead">Advanced Followers Manager</p>
+      <hr class="my-4">
+      <p class="lead">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;text-align:center;">Login</button>
+      </p>
+    </div>
+</div>
 
-<h2>User Login - Please enter your name</h2>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;text-align:center;">Login</button>
-
+<!-- LOGIN MODAL -->
 <div id="id01" class="modal">
-  
   <form class="modal-content animate center-form" action="#" method="POST">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
