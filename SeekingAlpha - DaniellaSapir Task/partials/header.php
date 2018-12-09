@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="scripts/myscript.js"></script>
+
         <style>body{padding-top:70px;}.starter-template{padding:40px 15px;text-align:center;}</style>
         <link rel="stylesheet" media="all" href="stylesheets/style.css">
-        <title> <?php echo $page_title; ?> </title>
+        <title> Daniella's Task - Seeking Alpha</title>
     </head>
 
 <body>
